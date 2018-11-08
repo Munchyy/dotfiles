@@ -1,0 +1,8 @@
+alias g=git
+alias gs='git status'
+alias gc='git commit -am'
+alias push='git push'
+alias co='git checkout'
+alias npmr='npm run'
+alias bashrc='. ~/.bashrc'
+alias vibash='vi ~/.bashrc'
