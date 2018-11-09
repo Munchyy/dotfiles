@@ -7,3 +7,8 @@ alias co='git checkout'
 alias npmr='npm run'
 alias bashrc='. ~/.bashrc'
 alias vibash='vi ~/.bashrc'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
