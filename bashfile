@@ -3,10 +3,18 @@ alias gs='git status'
 alias gc='git commit -am'
 alias push='git push'
 alias pull='git pull'
-alias co='git checkout'
+alias cob='git checkout -b'
 alias npmr='npm run'
 alias bashrc='. ~/.bashrc'
 alias vibash='vi ~/.bashrc'
+
+alias master='co master'
+alias integration='co integration'
+alias co='checkoutAndPull'
+function checkoutAndPull() {
+  git checkout "$1"
+  git pull
+}
 
 alias ..='cd ..'
 alias ...='cd ../..'
