@@ -8,6 +8,7 @@ alias cob='git checkout -b'
 alias npmr='npm run'
 alias bashrc='. ~/.bashrc'
 alias vibash='vi ~/.bashrc'
+alias ll='ls -l'
 
 export PATH="$(yarn global bin):$PATH"
 export PATH="~/.npm-packages:$PATH"
@@ -25,14 +26,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias dimScreen=dim
-alias brightenScreen='xbacklight -inc 10'
-function dim() {
-  NEXT=$(echo `xbacklight -get` - 10 | bc)
-  if [ 1 -eq "$(echo "${NEXT} < 0.5" | bc)" ]
-  then
-    xbacklight -set 0.5
-  else  
-    xbacklight -set $NEXT
-  fi
-}
+alias dimScreen=./dimScreen.sh
+alias brightenScreen=./brightnenScreen.sh
+
