@@ -9,6 +9,9 @@ alias npmr='npm run'
 alias bashrc='. ~/.bashrc'
 alias vibash='vi ~/.bashrc'
 
+export PATH="$(yarn global bin):$PATH"
+export PATH="~/.npm-packages:$PATH"
+
 alias master='co master'
 alias integration='co integration'
 alias co='checkoutAndPull'
