@@ -1,8 +1,3 @@
 # To Use
-In ~/.bashrc:
-
-<code>
-source ~/dotfiles/bashfile
-</code>
-
-Copy .npmrc to ~/.npmrc
+- In ~/.bashrc: <code>source ~/dotfiles/bashfile</code>
+- Copy .npmrc to ~/.npmrc
