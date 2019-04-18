@@ -1,3 +1,4 @@
+alias vi=vim
 alias g=git
 alias gs='git status'
 alias gc='git commit -am'
